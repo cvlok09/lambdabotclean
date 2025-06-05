@@ -12,7 +12,7 @@ export default function App() {
     setMessages([...messages, userMessage]);
 
     try {
-      const res = await fetch("https://lambdabot100.onrender.com/update", {
+      const res = await fetch("https://cleanbackend-52u5.onrender.com/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: input })
