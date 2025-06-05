@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: lambdabot-backend
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn app:app
+    rootDir: backend
+    envVars:
+      - key: GOOGLE_CREDENTIALS
+        sync: false
