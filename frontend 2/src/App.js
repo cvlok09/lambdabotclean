@@ -12,7 +12,7 @@ export default function App() {
     setMessages([...messages, userMessage]);
 
     try {
-      const res = await fetch("https://lambdabotclean.vercel.app/", {
+      const res = await fetch("https://lambdabot100.onrender.com/update", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: input })
